@@ -5,6 +5,10 @@ void main(List<String> args) {
     41: 'Curitiba',
   };
 
+  String cidade = ddds[11]!;
+  print(cidade.toUpperCase());
+  // null assertion usa apenas em cenários,
+  //onde temos certeza que não será nulo.
 
   print(ddds.length);
 
@@ -25,4 +29,23 @@ void main(List<String> args) {
   print(ddds.isEmpty);
 
   print(ddds.isNotEmpty);
+
+  ddds.forEach((key, value) {
+    print('Key $key value $value');
+  });
+
+  //ddds.clear();
+
+  ddds.addAll({21: 'Rio de Janeiro'});
+
+  print(ddds);
+
+  ddds.removeWhere((key, value) => key > 20);
+
+  print(ddds);
+
+  //String cidade = ddds[13] ?? 'Não informado';
+  //print(cidade.toUpperCase());
+
+ 
 }
