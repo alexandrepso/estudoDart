@@ -5,8 +5,6 @@ void main(List<String> args) {
     41: 'Curitiba',
   };
 
-  String? cidade = ddds[11];
-  print(cidade);
 
   print(ddds.length);
 
